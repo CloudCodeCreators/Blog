@@ -12,6 +12,9 @@ main:
   - name: About us
     url: authors/
     weight: 30
+  - name: GitHub
+    url: https://github.com/CloudCodeCreators/Code/tree/main
+    weight: 40
   #- name: Resources
   #  weight: 40
   #  hasChildren: true
