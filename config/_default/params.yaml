@@ -51,5 +51,5 @@ footer:
 
 # Localization
 locale:
-  date_format: 'Aug 15, 2025'
+  date_format: 'Jan 2, 2006'
   time_format: '3:04 PM'
