@@ -11,10 +11,10 @@ sections:
     content:
       title: Cloud Code Creators
       text: Automation-first solutions for Microsoft 365 & beyond.
-      primary_action:
-        text: About us
-        url: /authors/
-        icon: rocket-launch
+      #primary_action:
+      #  text: About us
+      #  url: /authors/
+      #  icon: rocket-launch
       #secondary_action:
       #  text: Contact Us
       #  url: /contact/
@@ -27,6 +27,7 @@ sections:
         color: "navy"
         image:
           filename: bg-triangles.svg
+          height: 50px
           filters:
             brightness: 0.5
 
@@ -61,10 +62,10 @@ sections:
     content:
       title: Ready to transform your Modern Workplace?
       text: Automate, secure, and govern your Microsoft 365 and hybrid environments with proven expertise.
-      button:
-        text: About Us
-        url: /authors/
-        icon: rocket-launch
+      #button:
+      #  text: About Us
+      #  url: /authors/
+      #  icon: rocket-launch
     design:
       card:
         css_class: "bg-primary-700"
