@@ -6,8 +6,8 @@
     {{ $authors := where .Site.RegularPages "Section" "authors" }}
     {{ range $authors }}
       <div class="author-card border p-4 rounded shadow hover:shadow-lg transition">
-        {{ with .Params.avatar }}
-          <img src="{{ . }}" alt="{{ $.Title }}" class="w-24 h-24 rounded-full mx-auto">
+        {{ with .Resources.GetMatch "avatar*" }}
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="w-24 h-24 rounded-full mx-auto">
         {{ end }}
         <h3 class="mt-4 text-center font-bold">{{ .Title }}</h3>
         {{ with .Params.bio }}
