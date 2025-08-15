@@ -13,7 +13,7 @@ sections:
       text: Automation-first solutions for Microsoft 365 & beyond.
       primary_action:
         text: About us
-        url: /about/
+        url: /authors/
         icon: rocket-launch
       #secondary_action:
       #  text: Contact Us
@@ -63,7 +63,7 @@ sections:
       text: Automate, secure, and govern your Microsoft 365 and hybrid environments with proven expertise.
       button:
         text: About Us
-        url: /about/
+        url: /authors/
         icon: rocket-launch
     design:
       card:
