@@ -47,5 +47,4 @@ highlight_name: true
 website: "https://www.linkedin.com/in/kevin-oosterlaken/"
 ---
 
-Van Techniek naar Business Impact
 Als ervaren consultant combineer ik technische diepgang met strategisch inzicht om organisaties te helpen hun cloudomgevingen te beheersen en compliance aantoonbaar te maken. Mijn focus ligt op het transformeren van complexe IT-landschappen naar geautomatiseerde, veilige en bestuurbare ecosystemen.
