@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Report - Office 365 Exchange Online | Secura Signa</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; border-left: 4px solid #3498db; padding-left: 10px; margin-top: 30px; }
+        h3 { color: #2980b9; margin-top: 20px; }
+        .header-info { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .header-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+        .header-section h4 { margin: 0 0 10px 0; font-size: 1.1em; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 5px; }
+        .header-section p { margin: 5px 0; }
+        .info-section { background-color: #ecf0f1; padding: 15px; border-radius: 5px; margin: 10px 0; }
+        .cert-details { background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 15px; margin: 10px 0; }
+        .status-valid { color: #27ae60; font-weight: bold; }
+        .status-expired { color: #e74c3c; font-weight: bold; }
+        .not-found { color: #e67e22; font-style: italic; }
+        .found { color: #27ae60; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #3498db; color: white; }
+        .summary-table { background-color: #ecf0f1; }
+        .timestamp { text-align: center; color: #7f8c8d; font-size: 0.9em; margin-top: 20px; }
+        .no-results { color: #e67e22; font-style: italic; padding: 10px; background-color: #fef9e7; border-radius: 5px; }
+        .version-info { position: absolute; top: 10px; right: 20px; background-color: #34495e; color: white; padding: 5px 10px; border-radius: 15px; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <div class="version-info">v3.9</div>
+    <div class="container">
+        <h1>🔐 Certificate Report</h1>
+        
+        <div class="header-info">
+            <div class="header-grid">
+                <div class="header-section">
+                    <h4>🏢 Tenant Information</h4>
+                    <p><strong>Display Name:</strong> Secura Signa</p>
+                    <p><strong>Tenant ID:</strong> d470f5b0-54a5-4bcb-aea1-bb95f559bdd6</p>
+                    <p><strong>Tenant Prefix:</strong> CloudCodeCreators</p>
+                    <p><strong>Primary Domain:</strong> CloudCodeCreators.onmicrosoft.com</p>
+                </div>
+                <div class="header-section">
+                    <h4>📋 Report Details</h4>
+                    <p><strong>Generated:</strong> 2025-08-15 15:20:25</p>
+                    <p><strong>Target Application:</strong> Office 365 Exchange Online</p>
+                    <p><strong>Script Version:</strong> v3.9</p>
+                    <p><strong>Account:</strong> kevin.oosterlaken@securasigna.nl</p>
+                </div>
+                <div class="header-section">
+                    <h4>📱 Application Details</h4>
+                    <p><strong>App Registration:</strong> Not Found</p>
+                    <p><strong>Service Principal Name:</strong> Office 365 Exchange Online</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>🔍 Connection Details</h3>
+            <table>
+                <tr><th>Property</th><th>Value</th></tr>
+                <tr><td>Auth Type</td><td>Delegated</td></tr>
+                <tr><td>Scopes</td><td>Agreement.Read.All, Application.ReadWrite.All, AppRoleAssignment.ReadWrite.All, AuditLog.Read.All, CrossTenantInformation.ReadBasic.All, DeviceManagementApps.Read.All, DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All, DeviceManagementRBAC.Read.All, DeviceManagementServiceConfig.Read.All, Directory.AccessAsUser.All, Directory.Read.All, Directory.ReadWrite.All, DirectoryRecommendations.Read.All, Domain.Read.All, email, Group.Read.All, IdentityRiskEvent.Read.All, openid, Organization.Read.All, Policy.Read.All, Policy.Read.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod, Policy.ReadWrite.ConditionalAccess, PrivilegedAccess.Read.AzureAD, PrivilegedEligibilitySchedule.Read.AzureADGroup, profile, Reports.Read.All, RoleAssignmentSchedule.Read.Directory, RoleEligibilitySchedule.Read.Directory, RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory, SecurityEvents.Read.All, SharePointTenantSettings.Read.All, Sites.Read.All, Team.ReadBasic.All, TeamSettings.Read.All, User.Read, User.Read.All, User.ReadWrite.All, UserAuthenticationMethod.Read.All, Application.Read.All</td></tr>
+                <tr><td>Environment</td><td>Global</td></tr>
+            </table>
+        </div>
+        <h2>🏢 App Registration</h2>
+        <div class="no-results">
+            <h3>❌ App Registration Not Found</h3>
+            <p>No App Registration found with name pattern: <strong>ExchangeServerApp*</strong></p>
+            <p><em>This is normal for Microsoft first-party applications</em></p>
+        </div>
+        <h2>🔧 Service Principal</h2>
+        <div class="info-section">
+            <h3>✓ Service Principal Found</h3>
+            <table>
+                <tr><th>Display Name</th><td>Office 365 Exchange Online</td></tr>
+                <tr><th>App ID</th><td>00000002-0000-0ff1-ce00-000000000000</td></tr>
+                <tr><th>Object ID</th><td>e55abb00-f55c-4ffd-addb-c17f3bd323ba</td></tr>
+                <tr><th>Type</th><td>Application</td></tr>
+                <tr><th>Enabled</th><td>🟢 Yes</td></tr>
+                <tr><th>Publisher</th><td>Not available</td></tr>
+            </table>
+        </div>
+        <div class="no-results">
+            <h3>📜 Certificates</h3>
+            <p>No certificates found for this service principal</p>
+        </div>
+        <h3>🔑 Client Secrets</h3>
+        <p class="no-results">No client secrets found</p>
+        <h2>📊 Summary</h2>
+        <div class="info-section">
+            <table class="summary-table">
+                <tr><th>Tenant</th><td>Secura Signa (CloudCodeCreators)</td></tr>
+                <tr><th>Target Application</th><td>Office 365 Exchange Online</td></tr>
+                <tr><th>App Registration</th><td><span class="not-found">❌ Not Found</span></td></tr>
+                <tr><th>Service Principal</th><td><span class="found">✓ Found</span></td></tr>
+                <tr><th>Script Version</th><td>v3.9</td></tr>
+                <tr><th>Report File</th><td style="font-family: monospace; font-size: 0.9em;">.\CloudCodeCreators_CertificateReport_Office_365_Exchange_Online_2025-08-15_152025_v3.9.html</td></tr>
+            </table>
+        </div>
+        
+        <div class="timestamp">
+            <p>Report generated on 2025-08-15 15:20:25</p>
+            <p>File: <strong>.\CloudCodeCreators_CertificateReport_Office_365_Exchange_Online_2025-08-15_152025_v3.9.html</strong></p>
+        </div>
+    </div>
+</body>
+</html>

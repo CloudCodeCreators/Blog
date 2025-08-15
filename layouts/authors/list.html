@@ -4,7 +4,8 @@
   <p class="text-center text-gray-700 mb-12">{{ .Content }}</p>
 
   <!-- Authors container: grid with centered items -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center justify-items-center">
+  <div class="inline-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+
     {{ range .Pages }}
       <!-- Card itself is the grid item -->
           <div class="border rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col justify-between items-center text-center max-w-xs h-full">
