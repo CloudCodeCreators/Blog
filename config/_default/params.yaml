@@ -38,7 +38,7 @@ header:
       # Logo filename in `assets/media/` folder
       filename: "logo.svg"
     button:
-      enable: true
+      enable: false
       text: "Get Started"
       url: "https://hugoblox.com/templates/"
     show_search: true
@@ -47,9 +47,9 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} Cloud Code Creators. All rights reserved.'
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Aug 15, 2025'
   time_format: '3:04 PM'
