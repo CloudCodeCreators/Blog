@@ -1,30 +1,42 @@
 {{ define "main" }}
-  <h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>
-  <p class="mb-8">{{ .Content }}</p>
+<h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>
+<p class="mb-8">{{ .Content }}</p>
 
-  <div class="authors-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-prose mx-auto">
-    {{ $authors := where .Pages "Kind" "page" }}
-    {{ range $authors }}
-      {{ if ne .File.BaseFileName "_index" }}
-        <div class="author-card border p-4 rounded shadow hover:shadow-lg transition">
-          {{ with .Resources.GetMatch "avatar*" }}
-            <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="w-24 h-24 rounded-full mx-auto">
-          {{ end }}
-          <h3 class="mt-4 text-center font-bold">{{ .Title }}</h3>
-          {{ with .Params.bio }}
-            <p class="mt-2 text-center text-sm text-gray-600">{{ . }}</p>
-          {{ end }}
+<div class="authors-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-prose mx-auto">
+  {{ range .Pages }}
+    {{ if ne .File.BaseFileName "_index" }}
+      <div class="author-card border p-4 rounded shadow hover:shadow-lg transition">
+        
+        {{ with .Resources.GetMatch "avatar*" }}
+          <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="w-24 h-24 rounded-full mx-auto">
+        {{ end }}
+
+        <h3 class="mt-4 text-center font-bold">{{ .Title }}</h3>
+
+        {{ with .Params.role }}
+          <p class="mt-1 text-center text-sm text-gray-500">{{ . }}</p>
+        {{ end }}
+
+        <p class="mt-2 text-center text-sm text-gray-600">{{ .Content }}</p>
+
+        {{ if .Params.organizations }}
           <p class="mt-2 text-center text-sm">
-            {{ with .Params.social.twitter }}
-              <a href="https://twitter.com/{{ . }}" target="_blank" class="text-blue-500 hover:underline">Twitter</a>
-            {{ end }}
-            {{ with .Params.social.linkedin }}
-              {{ if .Params.social.twitter }} | {{ end }}
-              <a href="https://linkedin.com/in/{{ . }}" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
-            {{ end }}
+          {{ range $index, $org := .Params.organizations }}
+            <a href="{{ $org.url }}" target="_blank" class="text-blue-500 hover:underline">{{ $org.name }}</a>{{ if lt (add $index 1) (len .Params.organizations) }} | {{ end }}
+          {{ end }}
           </p>
-        </div>
-      {{ end }}
+        {{ end }}
+
+        {{ if .Params.profiles }}
+          <p class="mt-2 text-center text-sm">
+          {{ range .Params.profiles }}
+            <a href="{{ .url }}" target="_blank" class="text-blue-500 hover:underline">{{ .label }}</a>
+          {{ end }}
+          </p>
+        {{ end }}
+
+      </div>
     {{ end }}
-  </div>
+  {{ end }}
+</div>
 {{ end }}
