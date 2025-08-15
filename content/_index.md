@@ -27,7 +27,6 @@ sections:
         color: "navy"
         image:
           filename: bg-triangles.svg
-          height: 50px
           filters:
             brightness: 0.5
 
