@@ -11,7 +11,7 @@ last_name: Valdivia
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: ☁️
 
 # Is this the primary user of the site?
 superuser: true
@@ -47,5 +47,4 @@ highlight_name: true
 website: "https://www.linkedin.com/in/dimitrivaldivia/"
 ---
 
-Security by Design & Automation First
 Ik geloof dat een robuuste digitale werkplek begint met een architectuur waarin security en compliance (conform BIO2, NIS, ISO 27001) vanaf de eerste stap zijn geïntegreerd. Mijn aanpak is gericht op het minimaliseren van handmatige processen en het maximaliseren van gestandaardiseerd beheer.
