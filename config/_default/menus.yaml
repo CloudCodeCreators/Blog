@@ -10,7 +10,7 @@ main:
     url: blog/
     weight: 20
   - name: About us
-    url: about/
+    url: authors/
     weight: 30
   #- name: Resources
   #  weight: 40
