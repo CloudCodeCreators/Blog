@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-date: 2023-10-24
+date: 2025-08-15
 type: landing
 
 design:
@@ -10,14 +10,14 @@ sections:
   - block: hero
     content:
       title: Cloud Code Creators
-      text: Microsoft 365 Desired State Configuration | Modern Workplace | Automation | Cybersecurity
+      text: Automation-first solutions for Microsoft 365 & beyond.
       primary_action:
-        text: Learn More
+        text: About us
         url: /about/
         icon: rocket-launch
-      secondary_action:
-        text: Contact Us
-        url: /contact/
+      #secondary_action:
+      #  text: Contact Us
+      #  url: /contact/
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -62,8 +62,9 @@ sections:
       title: Ready to transform your Modern Workplace?
       text: Automate, secure, and govern your Microsoft 365 and hybrid environments with proven expertise.
       button:
-        text: Contact Us
-        url: /contact/
+        text: About Us
+        url: /about/
+        icon: rocket-launch
     design:
       card:
         css_class: "bg-primary-700"
