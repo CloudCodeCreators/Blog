@@ -47,5 +47,5 @@ highlight_name: true
 website: "https://www.linkedin.com/in/kevin-oosterlaken/"
 ---
 
-Security by Design & Automation First
-Ik geloof dat een robuuste digitale werkplek begint met een architectuur waarin security en compliance (conform BIO2, NIS, ISO 27001) vanaf de eerste stap zijn geïntegreerd. Mijn aanpak is gericht op het minimaliseren van handmatige processen en het maximaliseren van gestandaardiseerd beheer.
+Van Techniek naar Business Impact
+Als ervaren consultant combineer ik technische diepgang met strategisch inzicht om organisaties te helpen hun cloudomgevingen te beheersen en compliance aantoonbaar te maken. Mijn focus ligt op het transformeren van complexe IT-landschappen naar geautomatiseerde, veilige en bestuurbare ecosystemen.
