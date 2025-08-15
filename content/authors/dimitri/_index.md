@@ -33,7 +33,6 @@ profiles:
   - icon: at-symbol
     url: 'mailto:dimitri@valdivia.nl'
     label: E-mail Me
-  - icon: brands/x
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/dimitrivaldivia/
   # Link to a PDF of your resume/CV - upload it to `static/uploads/resume.pdf`
