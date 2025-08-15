@@ -1,42 +1,42 @@
 {{ define "main" }}
-<h1 class="text-3xl font-bold mb-4">{{ .Title }}</h1>
-<p class="mb-8">{{ .Content }}</p>
+<div class="max-w-5xl mx-auto px-4 py-12">
+  <h1 class="text-4xl font-bold mb-6 text-center">{{ .Title }}</h1>
+  <p class="text-center text-gray-700 mb-12">{{ .Content }}</p>
 
-<div class="authors-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-prose mx-auto">
-  {{ range .Pages }}
-    {{ if ne .File.BaseFileName "_index" }}
-      <div class="author-card border p-4 rounded shadow hover:shadow-lg transition">
-        
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {{ range .Pages }}
+      <div class="border rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col items-center text-center">
+
         {{ with .Resources.GetMatch "avatar*" }}
-          <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="w-24 h-24 rounded-full mx-auto">
+          <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="w-32 h-32 rounded-full mb-4">
         {{ end }}
 
-        <h3 class="mt-4 text-center font-bold">{{ .Title }}</h3>
+        <h2 class="text-xl font-semibold">{{ .Title }}</h2>
 
         {{ with .Params.role }}
-          <p class="mt-1 text-center text-sm text-gray-500">{{ . }}</p>
+          <p class="text-sm text-gray-500 mt-1">{{ . }}</p>
         {{ end }}
 
-        <p class="mt-2 text-center text-sm text-gray-600">{{ .Content }}</p>
+        <p class="text-gray-600 mt-3 text-sm">{{ .Content }}</p>
 
         {{ if .Params.organizations }}
-          <p class="mt-2 text-center text-sm">
-          {{ range $index, $org := .Params.organizations }}
-            <a href="{{ $org.url }}" target="_blank" class="text-blue-500 hover:underline">{{ $org.name }}</a>{{ if lt (add $index 1) (len .Params.organizations) }} | {{ end }}
-          {{ end }}
+          <p class="mt-3 text-sm">
+            {{ range $i, $org := .Params.organizations }}
+              <a href="{{ $org.url }}" target="_blank" class="text-blue-600 hover:underline">{{ $org.name }}</a>{{ if lt (add $i 1) (len .Params.organizations) }} | {{ end }}
+            {{ end }}
           </p>
         {{ end }}
 
         {{ if .Params.profiles }}
-          <p class="mt-2 text-center text-sm">
-          {{ range .Params.profiles }}
-            <a href="{{ .url }}" target="_blank" class="text-blue-500 hover:underline">{{ .label }}</a>
-          {{ end }}
-          </p>
+          <div class="mt-3 flex justify-center gap-3">
+            {{ range .Params.profiles }}
+              <a href="{{ .url }}" target="_blank" class="text-blue-500 hover:underline text-sm">{{ .label }}</a>
+            {{ end }}
+          </div>
         {{ end }}
 
       </div>
     {{ end }}
-  {{ end }}
+  </div>
 </div>
 {{ end }}
