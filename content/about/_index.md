@@ -1,7 +1,7 @@
 ---
-title: "About Us"
+title: 'About Us'
 date: 2025-08-15
-type: page
+
 
 sections:
   - block: text
@@ -61,9 +61,9 @@ sections:
     content:
       title: Work With Us
       text: Ready to transform your Microsoft 365 and hybrid environments with automation and security at the core?
-      button:
-        text: Get in Touch
-        url: /contact/
+      #button:
+      #  text: Get in Touch
+      #  url: /contact/
     design:
       card:
         css_class: "bg-primary-700"
